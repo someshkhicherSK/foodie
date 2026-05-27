@@ -27,16 +27,9 @@
 // };
 
 // export default nextConfig;
-/**    
- @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */
 
 const nextConfig = {
-
-  turbopack: {
-
-    root: __dirname,
-
-  },
 
   images: {
 
@@ -46,13 +39,11 @@ const nextConfig = {
 
         protocol: "http",
 
-        hostname:
-          "localhost",
+        hostname: "localhost",
 
         port: "5000",
 
-        pathname:
-          "/uploads/**",
+        pathname: "/uploads/**",
 
       },
 
@@ -60,11 +51,9 @@ const nextConfig = {
 
         protocol: "https",
 
-        hostname:
-          "foodie-qsnw.onrender.com",
+        hostname: "foodie-qsnw.onrender.com",
 
-        pathname:
-          "/uploads/**",
+        pathname: "/uploads/**",
 
       },
 
