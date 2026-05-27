@@ -1,3 +1,7 @@
 export default function Page() {
-  return <h1>Add Food</h1>;
+  return (
+    <div>
+      Add Food
+    </div>
+  );
 }
