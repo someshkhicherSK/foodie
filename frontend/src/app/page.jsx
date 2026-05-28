@@ -1,7 +1,7 @@
-import UserHomePage from "./(user_panal)/page";
+import { redirect } from "next/navigation";
 
 export default function Home() {
 
-  return <UserHomePage />;
+  redirect("/home");
 
 }
