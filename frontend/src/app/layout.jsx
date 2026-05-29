@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
-
 import "./globals.css";
-
+import Header from "./(user_panal)/components/Header";
+import Footer from "./(user_panal)/components/Footer";
 import { Toaster } from "react-hot-toast";
 
 import { AuthProvider } from "@/context/AuthContext";
@@ -50,9 +50,11 @@ export default function RootLayout({
 
           {/* CART PROVIDER */}
           <CartProvider>
+    <Header />
 
             {/* APP */}
             {children}
+    <Footer />
 
             {/* TOAST */}
             <Toaster
