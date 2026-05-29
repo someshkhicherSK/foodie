@@ -1,7 +1,27 @@
-import { redirect } from "next/navigation";
+import Hero from "./components/Hero";
 
-export default function Home() {
+import CategorySection from "./components/CategorySection";
 
-  redirect("/home");
+import PopularFoods from "./components/PopularFoods";
 
+import Newsletter from "./components/Newsletter";
+
+
+export default function HomePage() {
+
+  return (
+
+    <div>
+
+      <Hero />
+
+      <CategorySection />
+
+      <PopularFoods />
+
+      <Newsletter />
+
+    </div>
+
+  );
 }
